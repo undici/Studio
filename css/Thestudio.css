@@ -1,6 +1,6 @@
 body{
 margin: 0;
-padding:0px 0 0 0;
+padding:0 0 0 0;
 font-family: Verdana, sans-serif;
 font-size: 100%
 line-height: 1.2em;
@@ -21,9 +21,21 @@ margin: 0 50px 0 0;
 
 a{
 font-family: Miriam Fixed, Arial, Helvetica, sans-serif;
-font-size: 25px;
+font-size: 20px;
 text-decoration: none;
 font-variant: small-caps;
+}
+
+ul#nav a{
+color: #8d8c8b;
+}
+
+ul#nav a.selected{
+color: #000;
+}
+
+ul#nav a:hover{
+color: #000;
 }
 
 a:link, a:visited{
@@ -58,7 +70,7 @@ left: 50px;
 }
 
 #content{
-padding: 80px 0 0 0;
+padding: 0 0 0 0;
 margin: 20px auto;
 width: 100%;
 }
@@ -69,7 +81,7 @@ h1{
 	width: 60%;
 	margin: 20px auto;
 	font-variant: small-caps;
-	padding-top: 150px;
+	padding-top: 50px;
 }
 
 p{
@@ -83,7 +95,7 @@ p{
 #box{
 	float: left;
 	width: 100%;
-	padding-top: 50px;
+	padding-top: 150px;
 }
 
 #Credo{
@@ -94,10 +106,19 @@ p{
 }
 
 #Producten{
-	background-color: #f17c71;
 	float: left;
 	width: 100%;
 	height: 700px;
+background: rgb(213,206,166); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(213,206,166,1) 0%, rgba(201,193,144,1) 40%, rgba(183,173,112,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(213,206,166,1)), color-stop(40%,rgba(201,193,144,1)), color-stop(100%,rgba(183,173,112,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(213,206,166,1) 0%,rgba(201,193,144,1) 40%,rgba(183,173,112,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(213,206,166,1) 0%,rgba(201,193,144,1) 40%,rgba(183,173,112,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(213,206,166,1) 0%,rgba(201,193,144,1) 40%,rgba(183,173,112,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(213,206,166,1) 0%,rgba(201,193,144,1) 40%,rgba(183,173,112,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70',GradientType=0 ); /* IE6-9 */
+
+
 }
 
 #joicoimg{
@@ -113,8 +134,6 @@ padding: 10px;
 }
 
 #Behandelingen{
-	border-top: 2px solid red;
-	border-bottom: 2px solid red;
 	background-color: #ffffff;
 	float: left;
 	width: 100%;
